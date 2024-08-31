@@ -33,7 +33,7 @@ def translate_and_generate(text):
     return tuple(generated_audio_paths) + tuple(list_translations)
 
 def transcribe_audio(audio_file):
-    aai.settings.api_key = "551438c8eb2d4eb2927307d8c763408e"
+    aai.settings.api_key = "<Your assembly ai Api Key here>"
     transcriber = aai.Transcriber()
     return transcriber.transcribe(audio_file)
 
@@ -50,11 +50,12 @@ def translate_text(text: str) -> str:
 
 def text_to_speech(text: str) -> str:
     client = ElevenLabs(
-        api_key="sk_9852342ec7afeaed89f471384e7e8cf019cd2899167704e2",
+        api_key="<Eleven Labs API Key Here>",
     )
 
     response = client.text_to_speech.convert(
-        voice_id="nPczCjzI2devNBz1zQrb",
+        voice_id="nPczCjzI2devNBz1zQrb", #Default Brain Voice 
+        # If You upgarde plan in eleven just clone Your Voice and you will get a Voice id Just replace with default voice
         optimize_streaming_latency="0",
         output_format="mp3_22050_32",
         text=text,
