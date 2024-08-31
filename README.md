@@ -18,8 +18,8 @@ This project is a powerful web application that translates English text or audio
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/multi-language-translator.git
-   cd multi-language-translator
+   git clone https://github.com/GudisaSandeep/Multi-Language-Translator-with-Text-and-Voice-Outputs
+   cd Multi-Language-Translator-with-Text-and-Voice-Outputs
    ```
 
 2. **Install dependencies:**
