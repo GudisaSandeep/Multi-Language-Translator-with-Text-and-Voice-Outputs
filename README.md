@@ -36,7 +36,7 @@ This project is a powerful web application that translates English text or audio
 4. **Run the application:**
 
    ```bash
-   python app.py
+   gradio main.py
    ```
 
 5. **Access the application:**
